@@ -1,140 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pagina Oficial Liceo Nocturno Adolfo Ernst</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Página Institucional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5px;
+            background-image: url('css/image/persona.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-radius: 10px;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            border-radius: 10px;
+        }
+        .carousel img {
+            width: 245px;
+            transition: transform 1s ease;
+            border-radius: 10px;
+        }
+        .carousel:hover img {
+            transform: translateX(-100%);
+        }
+        .news-bar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            overflow: hidden;
+            height: 20px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+        }
+        .news-bar marquee {
+            font-size: 1.2em;
+        }
+        header {
+            background-image: url('css/image/cintillo.png');
+            text-align: center;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .buttons {
+            margin: 170px 10px;
+            text-align: center;
+        }
+        .buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: darkred;
+            display: inline;
+        }
+
+        .cookie-rules {
+            margin: 20px 0;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-
-
-<div id="contenedor">
-
-	<header>
-
-          <div id="cintillo"><img src="css/image/cintillo.png"></div>
-
-    
-	</header>
-	
-	<nav>
-		
-        <li><a href="">Inicio</a>
-         
-         <ul>
-         <li><a href=""rel="nofollow" target="self">Quienes Somos</a></li>
-         <li><a href="https://autogestion.mppe.gob.ve/iniciar-sesion"rel="nofollow" target="self">Recibo de pago</a></li>
-         
-         </ul>
-        </li>
-
-        <li><a href="">Clases</a>
-         <ul>
-         <li><a href=""rel="nofollow" target="self">Consejo Educativo</a></li>
-         <li><a href=""rel="nofollow" target="self">Programas </a></li>
-         
-         </ul>
-         </li>
-
-         <li><a href="">Formato</a>
-         <ul>
-         <li><a href="https://mega.nz/folder/YOESFDRa#0Ax8EVNvlJbzwFnS-OgBjQ" rel="nofollow" target="self" >Formato Personal </a></li>
-         <li><a href="https://almacenamientoadolfoernest.github.io/web/formatos.html" rel="nofollow" target="self">Formatos Estudiantes</a></li>
-
-         </ul>
-         </li>
-
-         <li><a href="">Control de Estudio</a>
-         <ul>
-         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScKiZCGEuasAWiJ0TF-Ha5GE_W2x1wdSdTSiLIVzEUSSn36jQ/viewform?usp=sf_link"rel="nofollow" target="self">Pre-Inscripcion en Linea</a></li>
-         <li><a href=""rel="nofollow" target="self">Graduados  </a></li>
-         
-         </ul>
-         </li>
-
-
-
- </nav>
-   
-    <div id="fondo"><img src="css/image/fondo2.jpg"></div>
-
-   <section id="contenido">
-
-    
-	
-   <div class="carrousel">
-        <div class="conteCarrousel">
-            <div class="itemCarrousel" id="itemCarrousel-1">
-                <div class="itemCarrouselTarjeta"><img src="css/image/liceoadolfo.jpg"></div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-3">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#itemCarrousel-2">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="itemCarrousel" id="itemCarrousel-2">
-                <div class="itemCarrouselTarjeta"><img src="css/image/liceo1.jpg"></div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-1">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#itemCarrousel-3">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="itemCarrousel" id="itemCarrousel-3">
-                <div class="itemCarrouselTarjeta"><img src="css/image/liceo2.jpg"></div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-2">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#itemCarrousel-1">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="conteCarrouselController">
-            <a href="#itemCarrousel-1">•</a>
-            <a href="#itemCarrousel-2">•</a>
-            <a href="#itemCarrousel-3">•</a>
-        </div>
-    </div>
-
-    </section>
-
-     <aside class="buttons">
-     	
+    <header>
         
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-google-plus"></a>
-      <a href="#" class="fa fa-youtube"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-whatsapp"></a>
-      <a href="#" class="fa fa-envelope-o" aria-hidden="true"></a>
-      <a href="#" class="fa fa-instagram"></a>
-
-    
-     </aside>
-
-     <footer>
-
-     <h6> < Hecho > < Creado > < Administrado > por David Bravo Correo Mercadobravoca@gmail.com</h6>
-     	
-     	
-     </footer>
-     
-
-</div>
+    </header>
+    <section class="carousel">
+        <img src="css/image/imagen1.gif" alt="Imagen 1">
+        <img src="css/image/estudio.jpg" alt="Imagen 2">
+        <img src="css/image/liceo1.jpg" alt="Imagen 3">
+        <img src="css/image/adolfernst.jpg" alt="Imagen 4">
+        <img src="css/image/liceo2.jpg" alt="Imagen 5">
+        <img src="css/image/mate.gif" alt="Imagen 3">
+        <img src="css/image/ecualizer.gif" alt="Imagen 2">
+        <img src="css/image/monkey.gif" alt="Imagen 2">
+        <img src="css/image/cat.gif" alt="Imagen 2">
+        
+    </section>
+    <section class="news-bar">
+        <marquee>Últimas noticias: Inscripciones abiertas para el próximo semestre | Feria de Ciencia y Tecnología el próximo mes | Nueva biblioteca inaugurada...</marquee>
+    </section>
+    <section class="buttons">
+        <button>Botón 1</button>
+        <button>Botón 2</button>
+        <button>Botón 3</button>
+        <button>Botón 4</button>
+        <button>Botón 5</button>
+    </section>
+    <section class="cookie-rules">
+        <p>Esta página utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra política de cookies.</p>
+    </section>
+    <section class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Institución Educativa. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

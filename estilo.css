@@ -1,264 +1,202 @@
-*{
-
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-body{
-
- background: #444;
- color: #fff;
-
+body {
+    background: #444;
+    color: #fff;
 }
 
-header{
-
-	height: 100px;
-	background: #000;
+header {
+    height: 100px;
+    background: #000;
 }
 
-header #cintillo img{
-
-height: 98px;
-width: 905px;
-border-radius: 10px;
-
-
+header #cintillo img {
+    height: 98px;
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 10px;
 }
 
-#contenedor{
-
- width: 905px;
- margin: auto;
- margin-top: 10px;
- background: #000;
- border-radius: 20px;
-
-
+#contenedor {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 10px;
+    background: #000;
+    border-radius: 20px;
 }
 
-nav{
-
-  margin: auto;
-  background-image: url(css/image/fondo2.jpg);
-  height: 85px;
-  width: 905px;
-  list-style: none;
-  padding-top: 0px;
-  position: relative;
-  border-radius: 20px;
-
+nav {
+    margin: auto;
+    background-image: url('css/image/fondo2.jpg');
+    height: auto;
+    width: 100%;
+    max-width: 905px;
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    border-radius: 20px;
 }
 
-
-ul, ol{
-
-  list-style: none;
-  
+ul, ol {
+    list-style: none;
 }
 
+nav li {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
 
 nav li a {
-
-  background-color: ghostwhite ;
-  color: black;
-  text-decoration: revert;
-  padding: 5px 25px 5px 20px ;
-  display:flex;
-  border-radius: 10px;
-    
+    background-color: ghostwhite;
+    color: black;
+    text-decoration: revert;
+    padding: 5px 25px 5px 20px;
+    display: flex;
+    border-radius: 10px;
 }
 
-nav li a:hover{
-
-
- background-color:skyblue ;
- padding-top: 1px;
-    
-
-}
-
-nav > li {
-
-
-  float: left;
-  margin-bottom:10px;
-  margin-left:80px ;
-
-
+nav li a:hover {
+    background-color: skyblue;
+    padding-top: 1px;
 }
 
 nav li ul {
-
-position: absolute ;
-min-width: 100px;
-display: none;
-position: absolute;
-
-
-
+    position: absolute;
+    min-width: 100px;
+    display: none;
 }
 
-nav li:hover > ul{
-
- display: block;
-
-
+nav li:hover > ul {
+    display: block;
 }
 
-nav li ul li{
-
-position: relative;
-  
+nav li ul li {
+    position: relative;
 }
 
-
-nav li ul li ul{
-
-right: 140px;
-top: 10px;
-
-
+nav li ul li ul {
+    right: 140px;
+    top: 10px;
 }
 
-
-#contenido{
-
-	width: 600px;
-    height: 200px;
-    float: left;
-
-    
-}
-
-#contenido img{
-
-width: 650px;
-height: 450px;
-border-radius: 10px;
-
-}
-
-#fondo img{
-
-width: 650px;
-height: 300px;
-position: absolute;
-
-
-}
-
-.carrousel{
+#contenido {
     width: 100%;
-
+    max-width: 600px;
+    float: left;
+    padding: 20px;
 }
 
-.conteCarrousel{
-    width: 650px;
+#contenido img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#fondo img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    position: absolute;
+}
+
+.carrousel {
+    width: 100%;
+}
+
+.conteCarrousel {
+    width: 100%;
+    max-width: 650px;
     height: 300px;
     overflow: hidden;
 }
 
-.itemCarrousel{
+.itemCarrousel {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.itemCarrouselTarjeta{
+.itemCarrouselTarjeta {
     width: 100%;
     height: 100%;
 }
 
-.itemCarrouselArrows{
+.itemCarrouselArrows {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .itemCarrouselArrows > i:hover {
     cursor: pointer;
 }
 
-#itemCarrousel-1 {
-       
-}
-
-#itemCarrousel-2 {
-   
-}
-
-#itemCarrousel-3 {
-    
-}
-
-.conteCarrouselController{
+.conteCarrouselController {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.conteCarrouselController > a{
+.conteCarrouselController > a {
     text-decoration: none;
     font-size: 2em;
     color: grey;
 }
 
-.itemCarrouselArrows > a > i{
+.itemCarrouselArrows > a > i {
     color: greenyellow;
-
 }
 
 aside {
-
-	width: 255px;
-	height: 350px;
-	float: right;
-	
-
+    width: 100%;
+    max-width: 255px;
+    height: auto;
+    float: right;
+    padding: 20px;
 }
+
 .buttons {
-  min-width: 200px;
-  display:block;
-  justify-content: space-around;
-  padding-top: 100px;
+    min-width: 200px;
+    display: block;
+    justify-content: space-around;
+    padding-top: 100px;
 }
 
 .buttons a {
-  text-decoration: none;
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: #314652;
-  color: #f1f1f1;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
 }
 
 .buttons a:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-footer{
-
-
-    background:#5DADE2 ;
-    clear : both ;
+footer {
+    background: #5DADE2;
+    clear: both;
     height: 50px;
-    padding-top: 5px;
-    background-image: url(css/image/fondo2.jpg);
-    
-}
+    padding
