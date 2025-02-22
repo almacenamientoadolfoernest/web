@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Página Institucional</title>
     <style>
         body {
@@ -16,16 +17,28 @@
             background-attachment: fixed;
             border-radius: 10px;
         }
+        header {
+            background-image: url('css/image/cintillo.png');
+            text-align: center;
+            height: 120px;
+            width: 2000px;
+            padding-right: 10%;
+            
+        }   
         .carousel {
             width: 100%;
+            height: 300px;
+            padding-top: 1px;
             overflow: hidden;
             display: flex;
             border-radius: 10px;
         }
         .carousel img {
             width: 245px;
-            transition: transform 1s ease;
+            height: 300px;
+           
             border-radius: 10px;
+            transition: transform 10.6 s ease-in-out;
         }
         .carousel:hover img {
             transform: translateX(-100%);
@@ -42,41 +55,82 @@
         .news-bar marquee {
             font-size: 1.2em;
         }
-        header {
-            background-image: url('css/image/cintillo.png');
-            text-align: center;
-            height: 100px;
-            border-radius: 10px;
-        }
+        
         .buttons {
-            margin: 170px 10px;
-            text-align: center;
+            margin: 150px;
+            text-align:inherit ;
+            padding-left: 27%;
+            padding-top: -20%;
         }
         .buttons button {
-            margin: 5px;
-            padding: 10px 20px;
+            background-image: url('css/image/ruta5.gif');
+            padding: -20px ;
             font-size: 1em;
-            color: darkred;
+            color: black;
             display: inline;
-        }
+            margin-left: 5px;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+
+            }
+
+            .buttons button:hover {
+            transform: scale(1.1);
+            background-color: ;
+            }
+            
 
         .cookie-rules {
             margin: 20px 0;
         }
         .social-icons {
-            text-align: center;
-            margin: 20px 0;
+            position: fixed;
+            top: 54%;
+            transform: translateY(-60%);
+            padding-left: 3%;
+            color: darkred;
+          
         }
         .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
+            display: inline inline;
+            margin: 30px;
+            width: 10px;
+            height: 60px;
+            color: black;
+            text-align: center;
+            font-size: 3em;
+            transition: transform 0.8s ease;
         }
+
+        .social-icons a:hover {
+            transform: scale(2.1);
+            background-color: ;
+            }
+
+            footer{
+
+            background-color: #f8f9fa;
+            padding: 10px;
+            overflow: hidden;
+            height: 40px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            top: auto;
+        }
+
+        footer marquee {
+            font-size: 1.2em;
+        }
+
+            
+
     </style>
 </head>
 <body>
-    <header>
+    <header class="titulo">
         
     </header>
+
     <section class="carousel">
         <img src="css/image/imagen1.gif" alt="Imagen 1">
         <img src="css/image/estudio.jpg" alt="Imagen 2">
@@ -93,22 +147,24 @@
         <marquee>Últimas noticias: Inscripciones abiertas para el próximo semestre | Feria de Ciencia y Tecnología el próximo mes | Nueva biblioteca inaugurada...</marquee>
     </section>
     <section class="buttons">
-        <button>Botón 1</button>
-        <button>Botón 2</button>
-        <button>Botón 3</button>
-        <button>Botón 4</button>
-        <button>Botón 5</button>
+        <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>INICIO</h6></a></button>
+        <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>CONSTANCIAS</h6></a></button>
+        <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>CONSEJO EDUCATIVO</h6></a></button>
+        <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>FORMATOS</h6></a></button>
+        <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>PRE-INSCRIPCION</h6></a></button>
     </section>
     <section class="cookie-rules">
         <p>Esta página utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra política de cookies.</p>
     </section>
     <section class="social-icons">
-        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+         <a href="https://wa.me/+584124820369" class="fab fa-whatsapp" target="_blank"></a>
+        <a href="https://www.facebook.com/profile.php?id=61572769036776&mibextid=rS40aB7S9Ucbxw6v" class="fab fa-facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/elbunkerdelcat?igsh=MXZ2MGVoaHcyMmpmbw==" class="fab fa-instagram" target="_blank"></a>
+        <a href="https://www.tiktok.com/@el.bunker.del.cat?_t=ZM-8tv8I7U0zEk&_r=1" class="fab fa-tiktok" target="_blank"></a>
+        <a href="https://youtube.com/@elbunkerdelcat?si=j1jHnmTSQ_w_yZZn" class="fab fa-youtube" target="_blank"></a>
     </section>
     <footer>
-        <p>&copy; 2025 Institución Educativa. Todos los derechos reservados.</p>
+        <marquee><p>&copy; 2025 Institución Educativa. Todos los derechos reservados.</marquee></p>
     </footer>
 </body>
 </html>
