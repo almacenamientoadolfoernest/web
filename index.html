@@ -122,7 +122,16 @@
             font-size: 1.2em;
         }
 
-            
+            .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
 
     </style>
 </head>
@@ -153,9 +162,7 @@
         <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>FORMATOS</h6></a></button>
         <button><a href="http://localhost/heladeria/index.html" target="_blank"><h6>PRE-INSCRIPCION</h6></a></button>
     </section>
-    <section class="cookie-rules">
-        <p>Esta página utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra política de cookies.</p>
-    </section>
+    
     <section class="social-icons">
          <a href="https://wa.me/+584124820369" class="fab fa-whatsapp" target="_blank"></a>
         <a href="https://www.facebook.com/profile.php?id=61572769036776&mibextid=rS40aB7S9Ucbxw6v" class="fab fa-facebook" target="_blank"></a>
@@ -165,6 +172,23 @@
     </section>
     <footer>
         <marquee><p>&copy; 2025 Institución Educativa. Todos los derechos reservados.</marquee></p>
+        
     </footer>
+
+     <div class="cookie-banner" id="cookie-banner">
+        Este sitio web utiliza cookies para asegurar que obtengas la mejor experiencia. <button onclick="acceptCookies()">Aceptar</button>
+    </div>
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
